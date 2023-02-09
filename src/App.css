@@ -1,6 +1,6 @@
 .box {
-  width: 400px;
-  height: 400px;
+  width: 15rem;
+  height: 15rem;
   border: 3px solid white;
   border-radius: 10px;
   margin: 25px auto;
@@ -18,8 +18,8 @@
 
 input {
   width: 220px;
-  height: 25px;
-  font-size: 20px;
+  height: 1rem;
+  font-size: 1rem;
   font-weight: bold;
   border: 2px dashed white;
   border-radius: 5px;
@@ -34,5 +34,5 @@ body {
 p {
   text-align: center;
   color: white;
-  font-size: 25px;
+  font-size: 1rem;
 }
