@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import "./App.css";
+import Callback from './Callback';
 
 function App() {
+  const [UIcolor, setUIColor] = useState(null);
+
+  const getColor = (color) => {
+    setUIColor(color);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="box" style={{ background: `${UIcolor}` }}></div>
+      <Callback getColor={getColor} />
+      <p>Type in a color in the input field!</p>
+      <p>You typed: <span style={{ color: `${UIcolor}` }}>{UIcolor}</span></p>
     </div>
   );
 }
