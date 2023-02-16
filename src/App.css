@@ -6,11 +6,6 @@
   margin: 25px auto;
 }
 
-/* * {
-  display: flex;
-  justify-content: center;
-} */
-
 .input {
   text-align: center;
   box-sizing: content-box;
@@ -27,8 +22,34 @@ input {
   color: white;
 }
 
+nav ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
+.home {
+  padding-left: 25px;
+}
+
+.theme {
+  padding-right: 25px;
+}
+
 body {
   background-color: #000;
+  color: white;
+}
+
+h1 {
+  font-size: 28px;
 }
 
 p {
@@ -43,10 +64,22 @@ p {
     height: 25rem;
   }
 
+  .home {
+    padding-left: 550px;
+  }
+  
+  .theme {
+    padding-right: 550px;
+  }
+
   input {
     width: 220px;
     height: 2rem;
     font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 28px;
   }
   
   p {

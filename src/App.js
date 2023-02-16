@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./App.css";
 import Callback from './Callback';
+import Navbar from './Navbar';
 
 function App() {
   const [UIcolor, setUIColor] = useState(null);
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <div className="box" style={{ background: `${UIcolor}` }}></div>
       <Callback getColor={getColor} />
       <p>Type in a color in the input field!</p>
